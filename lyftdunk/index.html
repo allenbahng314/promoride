@@ -21,6 +21,24 @@
 		  }
 	   </script>  
 	       <link rel="canonical" href="http://www.promoride.net/lyftdunk/" />
+	       
+
+<!-- Event snippet for Coupon Activation conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-796365992/-oB7CMTfi4YBEKip3vsC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
        </head>
 
 <body>
@@ -231,17 +249,6 @@
 
 </script>
 
-<!-- Google Code for Conversion Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 855172464;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "IHpQCIr_n3QQ8MrjlwM";
-var google_remarketing_only = false;
-/* ]]> */
-</script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
 <noscript>
