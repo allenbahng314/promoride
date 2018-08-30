@@ -22,23 +22,21 @@
 	   </script>  
 	       <link rel="canonical" href="http://www.promoride.net/lyftdunk/" />
 	       
-
-<!-- Event snippet for Coupon Activation conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<!-- Global site tag (gtag.js) - Google Ads: 796365992 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-796365992"></script>
 <script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-796365992/-oB7CMTfi4YBEKip3vsC',
-      'event_callback': callback
-  });
-  return false;
-}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-796365992');
 </script>
+	       
+<!-- Event snippet for Coupon Activation conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-796365992/-oB7CMTfi4YBEKip3vsC'});
+</script>
+	       
        </head>
 
 <body>
